@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Eduky</string>
+    <string name="facebook_app_id">328094547688370</string>
+    <string name="fb_login_protocol_scheme">fb328094547688370</string>
+    <string name="nombre">Nombre (Mínimo 6 caracteres)</string>
+    <string name="registro">Registrarse</string>
+    <string name="visitanos">Visitanos en nuestras redes sociales</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="confirmar_correo">Confirmar correo electrónico</string>
+    <string name="correoMalo_toast">El correo electrónico no coincide</string>
+    <string name="correoIncorrecto_toast">El correo electrónico no es correcto</string>
+    <string name="usuarioRegistrado_toast">Usuario resgistrado con éxito</string>
+    <string name="seisCaracteres_toast">El nombre debe contener más de 6 caracteres</string>
+    <string name="todosCampos_toast">Por favor ingrese todos los campos</string>
+    <string name="bienvenido">Reciba un cordial saludo de parte del equipo Eduky</string>
+    <string name="title_activity_perfil_educador">PerfilEducador</string>
+    <string name="action_settings">Settings</string>
+    <string name="asignaturasTemas_title">Asignaturas o temas</string>
+    <string name="descripcionTitle">Descripción del educador</string>
+    <string name="llamar_boton">Llamar</string>
+    <string name="chat_boton">Chat</string>
+    <string name="enviar_correo">Enviar correo</string>
+    <string name="si">Si</string>
+    <string name="desea_llamar">"¿Deseas llamar a "</string>
+    <string name="no">No</string>
+    <string name="politica">Por favor, acepta la política de privacidad</string>
+    <string name="politicafb">Por favor, acepta la política de privacidad y vuelve a ingresar con Facebook</string>
+    <string name="busqueda_texto">Ingresa una palabra clave para buscar como: el tema, curso o asignatura de tu interés. Ejemplo: productos notables, química o derivadas. También puedes buscar el nombre o profesión de un educador. En los tres botones de arriba encontraras videos, audiolibros y ebooks</string>
+
+</resources>

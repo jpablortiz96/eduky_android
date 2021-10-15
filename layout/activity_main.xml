@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.juanpablo.eduky.MainActivity"
+    android:background="@drawable/gradient">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_google"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="20dp"
+        />
+
+    <View
+        android:id="@+id/separador_login"
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="3dp"
+        android:layout_below="@+id/btn_google"
+        android:layout_marginTop="30dp"
+        ></View>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_login"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/separador_login"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="250sp"
+            android:layout_height="30sp"
+            android:hint="@string/nombre"
+            android:textColor="#fff"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:textSize="12sp"
+            android:inputType="text"
+            android:nextFocusDown="@+id/email_login"
+            android:drawablePadding="5dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_login"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/name_login"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="250sp"
+            android:layout_height="30sp"
+            android:hint="@string/correo_electronico"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/cofi_email_login"
+            android:drawablePadding="5dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cofi_email_login"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/email_login"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="250sp"
+            android:layout_height="30sp"
+            android:hint="@string/confirmar_correo"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_confirmar"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/btn_registro"
+            android:drawablePadding="5dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/redes"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/facebook_logo"
+            android:src="@drawable/facebook_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:background="#11000000"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageButton
+            android:id="@+id/instagram_logo"
+            android:src="@drawable/instagram_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:background="#11000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/visitanos"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/redes"
+        android:layout_marginTop="25dp"
+        android:textStyle="italic|bold"
+        android:textColor="#fff"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_politica"
+        android:layout_below="@+id/cofi_email_login"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_politica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_politica"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:linksClickable="true"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_politica"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/registro"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:background="@drawable/boton_login_redondo"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
